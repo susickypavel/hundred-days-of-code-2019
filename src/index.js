@@ -10,11 +10,17 @@ ReactDOM.render(
     <Route
       exact={true}
       path="/"
-      component={() =>
-        days.map((_day, index) => {
-          return <Link to={`/day${index}`}>Day number: {index + 1}</Link>
-        })
-      }
+      component={() => (
+        <ul>
+          {days.map((_day, index) => {
+            return (
+              <li>
+                <Link to={`/day${index}`}>Day number: {index + 1}</Link>
+              </li>
+            )
+          })}
+        </ul>
+      )}
     />
   </BrowserRouter>,
   document.getElementById("mount")
