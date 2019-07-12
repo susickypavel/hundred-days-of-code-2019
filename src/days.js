@@ -6,8 +6,9 @@ import Day2 from "./days/002"
 import Day3 from "./days/003"
 import Day4 from "./days/004"
 import Day5 from "./days/005"
+import Day6 from "./days/006"
 
-export const days = [Day1, Day2, Day3, Day4, Day5]
+export const days = [Day1, Day2, Day3, Day4, Day5, Day6]
 
 function Days() {
   return days.map((day, index) => {
